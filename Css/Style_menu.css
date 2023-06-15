@@ -1,0 +1,148 @@
+.Menu_conteiner{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image:  url(../imgen/Img_menu/Vista_restau.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Menu_conteiner h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight:bold;
+    color: white;
+}
+.Menu_conteiner h3{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.585);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* LISTA DE FOOTS */
+.list{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{  
+    text-align: center;
+    padding-top: 80px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.title h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.title p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nav_foot{
+    width:45%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+.nav_foot ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav_foot li{
+    display: inline-block;
+}
+
+
+
+
+ .menu{
+    max-width:75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+ .one ,.two {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+
+
+/* OVERLAY */
+.Overlay, .Grid{
+    background-color: rgba(66, 64, 64, 0.1);
+    font-family: 'Poppins', sans-serif;  
+    padding-bottom: 30px;
+}
+.overImg, .Grid-view{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    padding-bottom: 40px;
+}
+.overImg div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.overImg img{
+    width: 100%;
+}
+
+
+/* lista num 2 */
+.list2 .one div,.list2 .two div{
+    display: flex;
+}
+.list2 .one div h3,.list2 .two div h3{
+  line-height: 60px;
+}
+.list2 img{
+    width: 105px;
+    height: 60px;
+}
+
+/* Grid-view */
+.Grid-view div{
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 2px 3px 13px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 3px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 13px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.Grid-view  h3{
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+.Grid-view p{
+    width: 70%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.Grid-view h1{
+    padding-bottom: 25px;
+}
+ .Grid-view img{
+    width: 100%;
+}
+

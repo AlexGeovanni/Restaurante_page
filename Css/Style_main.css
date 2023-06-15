@@ -1,0 +1,535 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+header{
+    background-color: rgba(0,0,0);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav_conteiner{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.nav_conteiner h1{
+    font-weight:500;
+    color: white;
+}
+.nav{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav ul li{
+    margin: 0 5px;
+    display: inline-block;
+}
+.nav a{
+    padding: 0 8px;
+    text-decoration: none;
+    color: #ffff;
+    transition: all 0.5s ease;
+}
+.nav li a:hover{
+    color: rgb(255, 180, 81);
+    cursor: pointer;
+} 
+.nav li ul{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0);
+}
+.nav li ul li{
+    display: block;
+    transition: all 0.6s ease;
+}
+.nav li:hover>ul{
+    display: block;
+}
+
+
+/* -------------------INDEX------------------------------------------------------------------------------------ */
+/*Contenido */
+.Hom_conteiner{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background:  url(../imgen/Restaurante.jpg) center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.Hom_conteiner h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.Hom_conteiner h2{
+    text-align: center;
+    color: white;
+}
+
+.Us_conteiner{
+    width: 75%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
+}
+.Us_conteiner h1,.Us_conteiner p{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.Us_conteiner p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+.Us_history{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.history p{
+    text-align: justify;
+    padding: 0 40px;
+}
+
+.imags{
+    width: 320px;
+   /* background-color: rgb(221, 221, 0); */
+   place-items: center;
+   margin: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap:10px;
+}
+.imags .imga1{
+    grid-column: 1/3;
+    width: 100%;
+    height: 200px;
+}
+.imags .imga2{
+    grid-column: 1/2;
+    width: 100%;
+    height: 100px;
+}
+.imags .imga3{
+    grid-column: 2/3;
+    width: 100%;
+    height: 100px;
+}
+
+/* Especial de hoy */
+.Special_conteiner{
+    height: 100vh; 
+    background-image: url(../imgen/Paquete.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    /* background-attachment: fixed;  */
+}
+.Special_conteiner .Title{
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 100px;
+    font-size: 2.4rem;
+    background-color: rgba(0, 0, 0, .4);
+}
+.Special_conteiner div h1,p {
+    color: black;
+}
+.Paqs_conteiner{
+    
+    overflow: scroll;
+    border-radius: 8px;
+    width: 55%;
+    max-height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,100%);
+}
+.Special_conteiner .paq_1,.Special_conteiner .paq_2,.paq_3{
+    background-color: white;
+    height: 320px;
+    display: flex;
+    gap: 20px;
+}
+.Paqs_conteiner .paq_conteiner{
+    padding: 25px 5px;
+}
+.Special_conteiner .paq_1 img{
+    width: 400px;
+
+}
+.Special_conteiner .paq_2 img{
+    width: 400px;
+
+}
+.Special_conteiner .paq_3 img{
+    width: 400px;
+
+}
+
+
+/* -------------------RESERVATION------------------------------------------------------------------------------------ */
+/* reservation */
+
+.reservation, .contact{
+    font-family: 'Poppins', sans-serif;
+}
+.reservation .title, .contact .title{
+    background-image: linear-gradient( #0000007c 0%, #000000 100%)
+    ,url(../imgen/Rersevartion.jpg);
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position:bottom;
+    background-attachment: fixed;
+
+}
+.reservation .title h1, .contact .title h1{
+    color: #fff;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+.reservation .title  p, .contact .title p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: .7;
+}
+/* Form de reservation */
+.conte-form{
+    width: 85%;
+    margin: auto;
+}
+.title-form{
+    text-align: center;
+    padding: 50px;
+
+}
+.title-form h1, .title-form p{
+    opacity: .8;
+    font-size: 2.5rem;
+}
+.title-form p{
+    font-size: 20px;
+    opacity: .5;
+}
+.form-reservation {
+    width: 85%;
+    border: 1px solid  rgba(143, 132, 132, 0.2);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form .reservatio{
+    width: 100%;
+    padding: 20px 35px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+form p{
+    margin-bottom: 5px;
+}
+form .conte-inpunt input{
+    width: 90%;
+    position: relative;
+    font-size: 15px;
+    border:none;
+    margin-bottom: 30px;
+    padding: 8px 12px;
+    background-color: rgba(166, 150, 150, 0.2);
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+.icon{
+    position: absolute;
+    margin: 10px 0 0 280px;
+}
+
+form .btn{
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    padding: 15px 40px;
+    background-color:#f9c56a;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.btn:hover{
+    background-color: #f7b239;
+    border-color: #f7b239;
+
+}
+.num-call{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 25px 0;
+    background-color: rgba(143, 132, 132, 0.1);
+    margin-bottom: 120px;
+    border-bottom: 1px solid  rgba(143, 132, 132, 0.8);
+    box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.69);
+    opacity: .5;
+    font-size:1.2rem ;
+}
+
+.powered{
+    display: none; 
+}
+.ocul{
+    display: block;
+}
+
+/* -------------------Contactos------------------------------------------------------------------------------------ */
+ /* contactos */
+.conte-contact{
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 60px;
+}
+.conte-contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+ .conte-contact p{
+    opacity: .5;
+ }
+.conte-contact .fa-solid{
+    color: #f7b239;
+    padding: 5px;
+}
+ .conte-contact .redes{
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+ }
+ .conte-contact .redes i:hover{
+    color: #f7b239;
+ }
+ .form-contact form{
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .form-contact input, .comentario{
+    padding:15px 10px ;
+    margin:15px 0 0 0;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: rgba(157, 155, 155, 0.1);
+ }
+.form-contact .btn{
+    margin: 10px 0;
+    padding:10px;
+    border: none;
+    cursor: pointer;
+    background-color:#f9c56a;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-contact .btn:hover{
+    background-color: #f7b239;
+}
+
+
+
+/* -------------------FOOTER------------------------------------------------------------------------------------ */
+footer{
+    background-color: rgba(0,0,0,0.7);
+}
+footer .Footer_conteiner{
+    width: 50%;
+    padding: 40px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.Footer_conteiner .Redes{
+    place-self: center;
+    font-size: 1.5rem;
+}
+.Redes i{
+    font-size: 2.5rem;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 0.6s ease;
+}
+.Redes i:hover{
+    cursor: pointer;
+    color: aliceblue;
+    transform: scale(1.3);
+}
+footer .copy{
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INTENTO DE HACER RESPOSIVE */
+
+@media (max-width: 800px) {
+.nav_conteiner{
+    width: 100%;
+    padding: 0 10px;
+}
+.nav_conteiner .nav a{   
+    font-size: 15px;
+    padding: 0 8px;
+}
+.nav_conteiner h1{
+    font-size: 20px;
+}
+
+.Us_conteiner{
+    width: 100%;
+}
+.Us_conteiner h1,.Us_conteiner p{
+    font-size: 1.5rem;
+}
+.Us_conteiner p{
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+}
+.history p{
+    padding: 0 20px;
+}
+
+.imags{
+    padding: 0 10px;
+    width: 320px;
+}
+.imags .imga1{
+    grid-column: 1/3;
+    width: 100%;
+    height: 180px;
+}
+
+
+/* Especial de hoy */
+.Special_conteiner{
+    height: 100%;
+    background-attachment: fixed; 
+}
+.Special_conteiner .Title{
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 20px 0;
+}
+.Special_conteiner div h1{
+    font-size: 20px;
+}
+.Special_conteiner div p{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 10px;
+    
+}
+.Paqs_conteiner{
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-bottom: 30px;    
+}
+.Special_conteiner .paq_1,.Special_conteiner .paq_2,.paq_3{
+    box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.89);
+    height: 240px;
+    display: flex; 
+    margin: 10px 0;
+    border-radius:8px;
+    
+}
+.Paqs_conteiner .paq_conteiner{
+    padding: 25px 5px;
+    
+}
+.Special_conteiner .paq_1 img{
+    width: 320px;
+    border-radius: 8px 0 0 8px;
+}
+.Special_conteiner .paq_2 img{
+    width: 320px;
+    border-radius: 8px 0 0 8px;
+}
+.Special_conteiner .paq_3 img{
+    width: 320px;
+    border-radius: 8px 0 0 8px;
+}
+
+/* footer */
+footer{
+    background-color: rgba(0,0,0,0.7);
+}
+footer .Footer_conteiner{
+    width: 75%;
+    padding: 25px 0;
+
+}
+.Footer_conteiner h1 {
+    font-size: 1.5rem;
+}
+.Redes i{
+    font-size: 2rem;
+    padding: 5px;
+}
+.Redes i:hover{
+    transform: scale(1.2);
+}
+footer .copy{
+    padding: 25px 0;
+    font-size: 1.2rem;
+}
+
+}
